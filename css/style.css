@@ -5,6 +5,7 @@
           box-sizing: border-box;
 }
 
+/*$primary-normal: #1a1a1b;*/
 html {
   scroll-behavior: smooth;
 }
