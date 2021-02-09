@@ -22,7 +22,7 @@ body {
     
     scroll-behavior: smooth;
 
-    background-color: #1a1a1a;
+    background-color: #EEF1F8;
 }
 
 svg, img {
@@ -30,9 +30,16 @@ svg, img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: $black;
+}
+
 .border {
     border: 1px solid red;
 }
+
+
 
 @import "partials/_menu.scss";
 @import "partials/_swiper.scss";
