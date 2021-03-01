@@ -41,10 +41,10 @@
 
     // H5
     @if $size == h5 and $device == desktop{     // Tamanho da font H5 no dispositivo desktop 
-        font-size: 18px;
+        font-size: 14px;
         line-height: 140%;
     }@else if $size == h5 and $device == mobile{    // Tamanho da font H5 no dispositivo mobile
-        font-size: 16px;
+        font-size: 10px;
         line-height: 150%;
     }
 
@@ -116,7 +116,7 @@ h4{
 }
 h5{
     text-transform: uppercase;  //caixa alta [sempre maiscula]
-    background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
+    background: linear-gradient(220.94deg, #19143D 14.43%, #0B0920 85.28%);
     background-clip: text; //máscara no texto
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
