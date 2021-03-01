@@ -3,14 +3,12 @@ header{
     padding-top: 16px;
 }
 .navbar-desktop{
-    border: 1px solid red;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .navbar-item-1{
     display: flex;
     justify-content: flex-start;
@@ -22,6 +20,13 @@ header{
 
     li {
         margin-left: 24px;
+    }
+
+    @include responsive(m){
+        display: none;
+}
+    @include responsive(s){
+        display: none;
     }
 }
 .logo{
@@ -65,6 +70,14 @@ header{
         
         background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
         }
+    }
+}
+.navbar-item-2{
+    @include responsive(m){
+        display: none;
+}
+    @include responsive(s){
+        display: none;
     }
 }
 .btn {

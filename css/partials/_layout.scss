@@ -48,17 +48,25 @@ $container-s: 540px; // Mobile small
 }
 
 .container1 {
-    border: 1px solid red;
     max-width: 1200px;
+    padding: 12px 16px;
 
     margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include responsive(m){
+            flex-direction: column;
+    }
+
+    @include responsive(s){
+        flex-direction: column;
+    }
 }
 .container-item-1 {
-    border: 1px solid red;
+    
     max-width: 600px;
     padding: 12px 16px;
 
@@ -70,7 +78,6 @@ $container-s: 540px; // Mobile small
     text-align: flex-start;
 }
 .container-item-2 {
-    border: 1px solid red;
     padding: 12px 16px;
     
     
@@ -83,7 +90,6 @@ $container-s: 540px; // Mobile small
 
 }
 .container2{
-    border: 1px solid red;
     max-width: 1200px;
 
     margin: 0 auto;
@@ -92,9 +98,12 @@ $container-s: 540px; // Mobile small
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @include responsive(m){
+        flex-direction: column;
+}
 }
 .articles {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     
@@ -103,32 +112,55 @@ $container-s: 540px; // Mobile small
     text-align: flex-start;
 }
 .articles-row1{
-    border: 1px solid blue;
     margin-top: 52px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include responsive(m){
+        flex-direction: column;
+        
 }
+    @include responsive(s){
+        flex-direction: column;
+}
+}
+.article-1 {
+    margin: 16px;
+}
+.article-2 {
+    margin: 16px;
+}
+.article-3 {
+    margin: 16px;
+}
+.article-4 {
+    margin: 16px;
+}
+
 .container3{
-    border: 1px solid red;
     
     margin-top: 52px;
     background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
     border-radius: 32px 32px 0px 0px;
+   
 }
 .container3{
-    text-align: center;
-    height: 100vh;
+    text-align: center;   
+}
+.download {
+    border: 1px solid #EEF1F8;
 }
 .download h2 {
     margin: 52px 0;
     color: $white;
 }
 .download-app {
-    border: 1px solid red;
+
     max-width: 1200px;
     margin: 0 auto;
+    padding: 12px 16px;
 
     display: flex;
     flex-direction: row;
@@ -136,10 +168,16 @@ $container-s: 540px; // Mobile small
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
+    @include responsive(m){
+        flex-direction: column;  
+}
+    @include responsive(s){
+        flex-direction: column;
+}
 }
 .descript-app {
-    border: 1px solid red;
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,7 +188,6 @@ $container-s: 540px; // Mobile small
     margin-bottom: 32px;
 }
 .descript-app p{
-    border: 1px solid black;
     display: flex;
     padding: 12px 16px;
     margin-bottom: 16px;
@@ -163,55 +200,86 @@ $container-s: 540px; // Mobile small
     height: 20px;
 }
 .buttons {
-    border: 1px solid black;
-    width: 100%;
     padding: 12px 16px;
-
+    margin-bottom: 24px;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    
+    justify-content: center;
+    align-items: baseline;
+
+    @include responsive(m){
+        width: 100%;
+    }
+    @include responsive(s){
+        width: 100%;
+    }
+
 }
 .btn1 {
-    border: 1px solid red;
-    width: 100%;
+    width: 200px;
+    height: 54px;
     margin-right: 8px;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
-.btn1 a {
-    border: 1px solid black;
+.btn-apple{
+    display: flex;
+    
     padding: 12px 32px;
     border-radius: 3px;
 
-    display: flex;
-    
+    transition: .7s ease-in-out;
+    background: transparent;
+    border: 2px solid $white-dark;
+
+    position: relative;
+    &:hover{
+        background: $white-dark;
+        transform: scale(1.05);
+    }  
 }
 .btn2 {
-    border: 1px solid red;
-    width: 100%;
+    width: 200px;
+    height: 54px;
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.btn2 a {
-    border: 1px solid black;
+.btn-play {
+    display: flex;
+
     padding: 12px 32px;
     border-radius: 3px;
-    
-    display: flex;
+
+    transition: .7s ease-in-out;
+    background: transparent;
+    border: 2px solid $white-dark;
+
+    position: relative;
+    &:hover{
+        background: $white-dark;
+        transform: scale(1.05);
+    }
 }
 .buttons a img{
     width: 20px;
     height: 20px;
 }
 .download-app img {
-    width: 80px;
-    height: 80px;
+    width: 500px;
+    height: 500px;
+    @include responsive(m){
+        width: 100%;
+    }
+    @include responsive(s){
+        width: 100%;
+    }
+    
 }
