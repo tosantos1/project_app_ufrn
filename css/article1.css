@@ -6,10 +6,10 @@
 }
 
 .container1 {
-  border: 1px solid red;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 80px;
+  padding: 12px 16px;
 }
 
 .container1 h1, p {
@@ -26,6 +26,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 38px;
 }
 
 .subtitleperfil h4 {
@@ -58,6 +59,23 @@
 
 .email {
   margin-left: 8px;
+}
+
+.container2 {
+  height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 12px 16px;
+}
+
+.container2 h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.container2 p {
+  max-width: 800px;
 }
 
 h1 {
@@ -211,27 +229,22 @@ header {
 }
 
 .navbar-desktop-article1 {
-  border: 1px solid red;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 12px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .navbar-desktop-article1 p {
   color: #4741BB;
-}
-
-.hamburguer {
-  width: 25px;
-  height: 25px;
 }
 
 .logo {
