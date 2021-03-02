@@ -1,0 +1,38 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "article1/_colors.scss";
+@import "article1/_layout.scss";
+@import "article1/_typography.scss";
+@import "article1/_buttons.scss";
+@import "article1/_spacing.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    scroll-behavior: smooth;
+
+    background-color: #EEF1F8;
+}
+svg, img {
+    display: block;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+.border {
+    border: 1px solid red;
+}
+
+@import "article1/_menu.scss"
+
