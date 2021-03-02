@@ -47,3 +47,39 @@ $container-s: 540px; // Mobile small
 
 }
 
+.container1 {
+    border: 1px solid red;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.container1 h1, p {
+    margin-bottom: 18px; 
+}
+.subtitleperfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.subtitleperfil h4 {
+    max-width: 700px
+}
+.perfil{
+    margin-left: 50px;
+}
+.fotoname {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.fotoname img {
+    margin-right: 12px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.email{
+    margin-left: 8px;
+}
+

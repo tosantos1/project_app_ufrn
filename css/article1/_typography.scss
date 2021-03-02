@@ -32,7 +32,7 @@
 
     // H4
     @if $size == h4 and $device == desktop{     // Tamanho da font H4 no dispositivo desktop 
-        font-size: 24px;
+        font-size: 20px;
         line-height: 130%;
     }@else if $size == h4 and $device == mobile{    // Tamanho da font H4 no dispositivo mobile  
         font-size: 18px;
@@ -41,10 +41,10 @@
 
     // H5
     @if $size == h5 and $device == desktop{     // Tamanho da font H5 no dispositivo desktop 
-        font-size: 14px;
+        font-size: 16px;
         line-height: 140%;
     }@else if $size == h5 and $device == mobile{    // Tamanho da font H5 no dispositivo mobile
-        font-size: 10px;
+        font-size: 12px;
         line-height: 150%;
     }
 
