@@ -41,6 +41,7 @@
 .container-item-1 {
   max-width: 600px;
   padding: 12px 16px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +60,7 @@
 
 .container-item-2 {
   padding: 12px 16px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +535,13 @@ a {
 
 header {
   width: 100%;
-  padding-top: 16px;
+  border: 2px solid red;
+  padding: 8px 12px;
+  background: #F7F8FC;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: fixed;
+  z-index: 999;
 }
 
 .navbar-desktop {
