@@ -9,22 +9,19 @@ header{
     z-index: 999;
 }
 .navbar-mobile {
-    display: flex;
+    max-width: $container-xl;
+    margin: 0 auto;
 
     justify-content: space-between;
     align-items: center;
 
     display: none;
-   
-    margin: 0 auto;
     
     @include responsive(m){
         display: flex;
-        
     }
     @include responsive(s){
         display: flex;
-        
     }
 }
 .bx {
@@ -45,6 +42,7 @@ header{
 
         width: 70%;
         height: 2px;
+        border-radius: 2px;
 
         transition: .7s ease;
 
@@ -100,33 +98,33 @@ header{
     }
 }
 .menu-mobile {
-    width: 100vw;
-    height: 100vh;
-    
     background-color: $white-light;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
-    
     opacity: 0;
     pointer-events: none;
     z-index: 888;
 
-    transform: translate3d(0,-100px,0);
-    transition: 1s ease;
-
+    transition: .7s ease;
 }
 .nav-list-mobile {
+    height: 50vh;
     max-width: 1200px;
     list-style: none;
 
     display: flex;
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: 7s ease;
 }
 .nav-link-mobile {
-    display: inline-block;
+    display: block;
     @include typeface-1(h3, desktop);
     color: $gray-2;
 
@@ -158,10 +156,12 @@ header{
 .active-menu-mobile {
     opacity: 1;
     pointer-events: all;
+    transition: .7s ease;
 }
 .nav-list-mobile {
     text-decoration: none;
     list-style: none;
+    transition: .7s ease;
 }
 .navbar-desktop{
     max-width: 1440px;
