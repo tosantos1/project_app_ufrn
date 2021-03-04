@@ -1,7 +1,8 @@
 // Typography Project
 
 @mixin typeface-1($size, $device: desktop){
-    font-family: 'Vollkorn', serif;
+    
+    font-family: 'Jost', sans-serif;
 
     // H1
     @if $size == h1 and $device == desktop{  // Tamanho da font H1 no dispositivo desktop 
@@ -52,7 +53,7 @@
 
 @mixin typeface-2($size: p2, $device: desktop){
     
-    font-family: 'Jost', sans-serif;
+    font-family: 'Vollkorn', serif;
 
     // P1
     @if $size == p1 and $device == desktop{

@@ -58,6 +58,17 @@
   text-align: flex-start;
 }
 
+.container-item-1 h1 {
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.container-item-1 p {
+  font-family: 'Jost', sans-serif;
+  color: #77787C;
+  font-weight: 400;
+}
+
 .container-item-2 {
   padding: 12px 16px;
   margin-top: 75px;
@@ -98,6 +109,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.container2 h2 {
+  font-weight: 200;
 }
 
 .articles {
@@ -148,6 +163,38 @@
   }
 }
 
+.articles h3 {
+  font-weight: 600;
+  position: relative;
+}
+
+.articles h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 0%;
+  height: 5px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
+}
+
+.articles h3:hover {
+  color: #373358;
+}
+
+.articles h3:hover::after {
+  width: 80%;
+  background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
+}
+
+.articles-row1 h4 {
+  font-weight: 400;
+  line-height: 100%;
+}
+
 .article-1 {
   margin: 16px;
 }
@@ -181,6 +228,7 @@
 .download h2 {
   margin: 52px 0;
   color: #EEF1F8;
+  font-weight: 200;
 }
 
 .download-app {
@@ -241,14 +289,44 @@
 .descript-app h3 {
   color: #F7F8FC;
   margin-bottom: 32px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 960px) {
+  .descript-app h3 {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .descript-app h3 {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
 }
 
 .descript-app p {
+  font-family: 'Jost', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 12px 16px;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 960px) {
+  .descript-app p {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .descript-app p {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
 }
 
 .descript-app img {
@@ -261,6 +339,8 @@
 }
 
 .buttons {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
   padding: 12px 16px;
   margin-bottom: 24px;
   display: -webkit-box;
@@ -390,14 +470,14 @@
 
 h1 {
   color: #0B0920;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 64px;
   line-height: 100%;
 }
 
 @media screen and (max-width: 960px) {
   h1 {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
@@ -405,14 +485,14 @@ h1 {
 
 h2 {
   color: #0B0920;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 52px;
   line-height: 110%;
 }
 
 @media screen and (max-width: 960px) {
   h2 {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
@@ -420,14 +500,14 @@ h2 {
 
 h3 {
   color: #0B0920;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 36px;
   line-height: 120%;
 }
 
 @media screen and (max-width: 960px) {
   h3 {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 24px;
     line-height: 120%;
   }
@@ -435,14 +515,14 @@ h3 {
 
 h4 {
   color: #0B0920;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 24px;
   line-height: 130%;
 }
 
 @media screen and (max-width: 960px) {
   h4 {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 18px;
     line-height: 130%;
   }
@@ -455,14 +535,14 @@ h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 14px;
   line-height: 140%;
 }
 
 @media screen and (max-width: 960px) {
   h5 {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Jost', sans-serif;
     font-size: 10px;
     line-height: 150%;
   }
@@ -470,14 +550,14 @@ h5 {
 
 p {
   color: #B3B5BA;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 16px;
   line-height: 140%;
 }
 
 @media screen and (max-width: 960px) {
   p {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Vollkorn', serif;
     font-size: 14px;
     line-height: 150%;
   }
@@ -490,14 +570,14 @@ p {
 
 strong {
   color: #0B0920;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Vollkorn', serif;
   font-size: 16px;
   line-height: 140%;
 }
 
 @media screen and (max-width: 960px) {
   strong {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Vollkorn', serif;
     font-size: 14px;
     line-height: 150%;
   }
@@ -677,7 +757,7 @@ header {
 
 .nav-link-mobile {
   display: block;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 36px;
   line-height: 120%;
   color: #77787C;
@@ -786,7 +866,7 @@ header {
 }
 
 .nav-linkdesktop {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 24px;
   line-height: 130%;
   display: inline-block;
@@ -836,7 +916,7 @@ header {
 
 .btn {
   border: 1px solid blue;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Jost', sans-serif;
   font-size: 14px;
   line-height: 140%;
   display: -webkit-box;

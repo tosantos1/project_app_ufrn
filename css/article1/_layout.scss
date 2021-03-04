@@ -46,7 +46,6 @@ $container-s: 540px; // Mobile small
     }
 
 }
-
 .container1 {
     max-width: 1200px;
     margin: 0 auto;
@@ -96,5 +95,6 @@ $container-s: 540px; // Mobile small
 }
 .container2 p {
     max-width: 800px;
+    color: $gray-2;
 }
 
