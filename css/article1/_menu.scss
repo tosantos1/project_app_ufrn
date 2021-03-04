@@ -3,16 +3,28 @@ header{
     padding-top: 16px;
 }
 
-.navbar-desktop-article1 { 
+.navbar-desktop-article1 {
     max-width: 1440px;
     margin: 0 auto;
     padding: 12px 16px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
-.navbar-desktop-article1 p {
-    color: $purple;
+.navbar-desktop-article1 a img {
+    display: none;
+    
+    @include responsive(m){
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    @include responsive(s){
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    
 }
 .logo {
     max-width: 88px;
