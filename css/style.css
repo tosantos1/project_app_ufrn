@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 1140px) and (min-width: 960px) {
   .articles h3::after {
-    top: 28px;
+    top: 35px;
   }
 }
 
@@ -200,6 +200,18 @@
 .articles h3:hover::after {
   width: 80%;
   background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
+}
+
+@media screen and (max-width: 1140px) and (min-width: 960px) {
+  .articles h3:hover::after {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .articles h3:hover::after {
+    width: 30%;
+  }
 }
 
 .articles-row1 h4 {

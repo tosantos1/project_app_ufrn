@@ -158,7 +158,7 @@ $container-s: 540px; // Mobile small
         background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
 
         @include responsive(m){
-            top: 28px;
+            top: 35px;
         }
         @include responsive(s){
             top: 28px;
@@ -171,6 +171,12 @@ $container-s: 540px; // Mobile small
         width: 80%;
         
         background: linear-gradient(225.55deg, #201C62 -0.83%, #4741BB 92.61%);
+        @include responsive(m){
+            width: 30%;
+        }
+        @include responsive(s){
+            width: 30%;
+        }
         }
     }
 }
