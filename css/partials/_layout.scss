@@ -58,7 +58,7 @@ $container-s: 540px; // Mobile small
     align-items: center;
 
     @include responsive(m){
-            flex-direction: column;
+        flex-direction: column;
     }
 
     @include responsive(s){
@@ -96,7 +96,6 @@ $container-s: 540px; // Mobile small
     align-items: center;
 
     text-align: center;
-
 }
 .container2{
     max-width: 1200px;
@@ -137,6 +136,7 @@ $container-s: 540px; // Mobile small
     @include responsive(s){
         flex-direction: column;
 }
+   
 }
 .articles h3 {
     font-weight: 600;
